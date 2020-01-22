@@ -14,6 +14,7 @@ import (
 func ParseFile(filename string, cfg interface{}) (err error) {
 	f, err := os.Open(filename)
 	if err != nil {
+
 		return
 	}
 	defer f.Close()
